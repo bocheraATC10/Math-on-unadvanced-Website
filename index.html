@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+  <title>Maths question on unadvance Website(still on development)</title>
+ <head>
+   <style>
+     body {
+       color: rgb(160,160,160);
+     }
+     h1 {
+       text-align: center;
+       color: rgb(0,0,0);
+       font-size: 70px;
+     }
+     p {
+       color: rgb(0,0,0);
+       font-size: 30px;
+   </style>
+ </head>
+ <body>
+   <h1>Zoom in if you are on a phone.</h1>
+   <p id="demo1">2<sup>3</sup>=2<sup>x</sup>&nbsp;&nbsp;What is the value of x?</p>
+   <button onclick="myfunction1()">2</button><button onclick="myfunction1b()">3</button>
+   <script>
+     function myfunction1() {
+       document.getElementById("demo1").innerHTML = "Incorrect";
+     }
+     function myfunction1b() {
+       document.getElementById("demo1").innerHTML = "correct!";
+     }
+   </script>
+   <p id="demo2">x<sup>2</sup>+2x+4=0&nbsp;&nbsp;What is the solution of this equation?</p>
+   <button onclick="myfunction2()">No solution</button><button onclick="myfunction2b()">2 and 1</button>
+   <script>
+     function myfunction2() {
+       document.getElementById("demo2").innerHTML = "Correct!"
+     }
+     function myfunction2b() {
+       document.getElementById("demo2").innerHTML = "Incorrect"
+     }
+   </script>
+   <P id="demo3">2x+3y=6<br>x-2y=10&nbsp;&nbsp;What is the value of y and x respectively?</P>
+   <button onclick="myfunction3()">-2 & 6</button><button onclick="myfunction3b()">6 & -2</button>
+   <script>
+     function myfunction3() {
+       document.getElementById("demo3").innerHTML = "Correct!"
+     }
+     function myfunction3b() {
+         document.getElementById("demo3").innerHTML = "Incorrect";
+       
+     }
+   </script>
+   </body>
+   </html>
